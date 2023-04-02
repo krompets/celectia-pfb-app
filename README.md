@@ -14,3 +14,5 @@ docker-compose up -d
 This will start the frontend and backend services in separate containers.
 You will be able to access the application at http://localhost:80. 
 The backend service will be running on http://localhost:5000, and the frontend service will proxy requests to the backend service automatically.
+
+Live demo here http://65.109.236.138/
