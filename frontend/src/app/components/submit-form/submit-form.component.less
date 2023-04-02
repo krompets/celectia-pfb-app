@@ -1,0 +1,156 @@
+.submit-pfb-form {
+  background: #3d3d3d;
+  padding: 50px;
+  border: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+  form.dark-mode {
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+    border-radius: 5px;
+    padding: 20px;
+    width: 820px;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .result {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    pre {
+      white-space: pre-wrap;
+    }
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input.port-field {
+    width: 120px !important;
+  }
+  input.ip-field {
+    width: 250px !important;
+  }
+  input.namespace-id-field,
+  input.fee-field,
+  input.gas-limit-field {
+    width: 150px !important;
+  }
+
+  input[type="text"],
+  textarea {
+    display: block;
+    width: 100%;
+    background-color: #3d3d3d;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #f1f1f1;
+  }
+
+  input[type="text"]:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1) inset;
+  }
+
+  .error-message {
+    padding: 10px;
+    border-bottom: 10px;
+    background: blanchedalmond;
+    color: red;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    i {
+      margin-right: 15px;
+    }
+  }
+  .submit-button {
+    display: block;
+    background-color: #3d3d3d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #f1f1f1;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:disabled {
+      cursor: not-allowed;
+      opacity: .5;
+    }
+  }
+
+  .submit-button:hover {
+    background-color: #4d4d4d;
+  }
+}
+
+::ng-deep {
+  mat-select {
+    color: white !important;
+    background-color: #424242;
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: none;
+    &.mat-focused {
+      background-color: #616161;
+    }
+    .mat-select-value {
+      color: white !important;
+    }
+    .mat-select-arrow {
+      color: white !important;
+    }
+    .mat-select-trigger {
+      color: white !important;
+      text-align: left;
+      span {
+        margin-right: 8px;
+      }
+    }
+    .mat-option {
+      color: white !important;
+      &:hover {
+        background-color: #616161;
+      }
+    }
+  }
+  .mat-form-field-label {
+    color: white !important;
+  }
+
+  .my-form mat-checkbox {
+    color: white;
+    .mat-checkbox-checked .mat-checkbox-background,
+    .mat-checkbox-indeterminate .mat-checkbox-background {
+      background-color: white;
+      border-color: white;
+    }
+    .mat-checkbox-checked .mat-checkbox-background .mat-checkbox-inner-container,
+    .mat-checkbox-indeterminate .mat-checkbox-background .mat-checkbox-inner-container {
+      border-color: #1565c0;
+    }
+    .mat-checkbox-label {
+      color: white;
+    }
+  }
+  .mat-card {
+    width: 760px;
+    background: #b3b3b3;
+    max-height: 300px;
+    margin: 10px;
+    overflow: auto;
+    word-wrap: break-word;
+  }
+}

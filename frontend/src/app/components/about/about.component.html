@@ -1,0 +1,24 @@
+<div class="about">
+  <h2>About</h2>
+  <p>This app allowing users to submit PayForBlob Transactions.
+    It call the PFB API in order to
+    <a href="https://docs.celestia.org/developers/node-tutorial/#submit-a-pfb-transaction" target="_blank">submit a PFB transaction</a>,
+  </p>
+  <p>
+    To successfully call the API via this app you have to run your node with options:
+    --gateway, --gateway.addr string, and --gateway.port string, to open the gateway and allow anyone to use your IP
+    as an endpoint to submit PFBs.
+  </p>
+  <p>NODE! This is just for test purpose</p>
+
+  <h2>Form parameters explanation:</h2>
+  <ul>
+    <li><b>scheme</b> - the protocol http or https (default is http)</li>
+    <li><b>Your Node IP</b> - your server IP</li>
+    <li><b>Port</b> - gateway port </li>
+    <li><b>Message</b> - Any text which will be automatically converted to hex-encoded bytes</li>
+    <li><b>Gas limit</b> - is the limit of gas to use for the transaction</li>
+    <li><b>Namespace ID</b> - should be 8 bytes.</li>
+    See <a href="https://docs.celestia.org/developers/node-tutorial/#submit-a-pfb-transaction">for more details</a>
+  </ul>
+</div>
